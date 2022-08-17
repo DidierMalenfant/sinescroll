@@ -1,0 +1,7 @@
+name=sinescroll
+author=Didier Malenfant
+description=A nostalgic Amiga sinus scroller.
+bundleID=net.malenfant.sinescroll
+version=0.1
+buildNumber=1
+imagePath=SystemAssets
