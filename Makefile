@@ -14,24 +14,9 @@ SDKBIN = $(SDK)/bin
 GAME=$(notdir $(CURDIR))
 SIM=Playdate Simulator
 
-# -- List user asm files
-UASRC = 
-
-# -- List all user C define here, like -D_DEBUG=1
-UDEFS = 
-
-# -- Define ASM defines here
-UADEFS = 
-
-# -- List the user directory to look for the libraries here
-ULIBDIR =
-
-# -- List all user libraries here
-ULIBS =
-
 # -- Add our extensions and libraries
-include extension/extension.mk
 include toyboxes/toyboxes.mk
+include extension/extension.mk
 
 # -- Include the common build rules
 include $(SDK)/C_API/buildsupport/common.mk
