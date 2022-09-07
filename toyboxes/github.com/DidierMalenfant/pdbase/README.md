@@ -1,6 +1,6 @@
 # pdbase for Playdate
 
-![](https://img.shields.io/github/license/DidierMalenfant/pdbase) ![](https://img.shields.io/badge/Lua-5.4-yellowgreen) ![](https://img.shields.io/badge/toybox.py-compatible-brightgreen) ![](https://img.shields.io/github/v/tag/DidierMalenfant/pdbase)
+[![MIT License](https://img.shields.io/github/license/DidierMalenfant/pdbase)](https://spdx.org/licenses/MIT.html) [![Lua Version](https://img.shields.io/badge/Lua-5.4-yellowgreen)](https://lua.org) [![Toybox Compatible](https://img.shields.io/badge/toybox.py-compatible-brightgreen)](https://toyboxpy.io) [![Latest Version](https://img.shields.io/github/v/tag/DidierMalenfant/pdbase)](https://github.com/DidierMalenfant/pdbase/tags)
 
 **pdbase** is a [**Playdate**](https://play.date) **toybox** which provides handy utility functions and SDK additions.
 
@@ -10,7 +10,13 @@ You can add it to your **Playdate** project by installing [**toybox.py**](https:
 toybox add DidierMalenfant/pdbase
 ```
 
-This **toybox** contains both **Lua** and **C** toys for you to play with.
+Then, if your code is in the `source` folder, just import the following:
+
+```lua
+import '../toyboxes/toyboxes.lua'
+```
+
+This **toybox** contains both **Lua** and **C** toys for you to play with. If you want to also use the **C** toys, you will have to also add `toyboxes/toybox.mk` to your makefile.
 
 ---
 
@@ -168,4 +174,4 @@ Print debug log message to the console. This macro is also disabled unless `PDBA
 
 ## License
 
-`pdbase` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
+**pdbase** is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.

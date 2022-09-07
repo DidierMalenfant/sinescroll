@@ -1,6 +1,6 @@
 # modplayer for Playdate
 
-![](https://img.shields.io/github/license/DidierMalenfant/modplayer) ![](https://img.shields.io/badge/Lua-5.4-yellowgreen) ![](https://img.shields.io/badge/toybox.py-compatible-brightgreen) ![](https://img.shields.io/github/v/tag/DidierMalenfant/modplayer)
+[![MIT License](https://img.shields.io/github/license/DidierMalenfant/modplayer)](https://spdx.org/licenses/MIT.html) [![Lua Version](https://img.shields.io/badge/Lua-5.4-yellowgreen)](https://lua.org) [![Toybox Compatible](https://img.shields.io/badge/toybox.py-compatible-brightgreen)](https://toyboxpy.io) [![Latest Version](https://img.shields.io/github/v/tag/DidierMalenfant/modplayer)](https://github.com/DidierMalenfant/modplayer/tags)
 
 **modplayer** is a [**Playdate**](https://play.date) **toybox** which lets you play **Amiga Soundtracker/Protracker** modules, based off [lmp](https://github.com/evansm7/lmp).
 
@@ -9,6 +9,8 @@ You can add it to your **Playdate** project by installing [**toybox.py**](https:
 ```console
 toybox add DidierMalenfant/modplayer
 ```
+
+Then you [simply](https://github.com/toyboxpy/toybox.py#using-c-toyboxes) need to add `toyboxes/toybox.mk` to your makefile.
 
 This **toybox** contains **Lua** toys for you to play with.
 
@@ -71,6 +73,10 @@ function playdate.update()
 end
 ```
 
+## Sample code
+
+You can find an example of using **modplayer** in the little [**sinescroll**](https://github.com/DidierMalenfant/sinescroll) project.
+
 ### Where can I get modules from?
 
 #### The internet
@@ -90,4 +96,4 @@ end
 
 ## License
 
-`modplayer` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
+**modplayer** is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
